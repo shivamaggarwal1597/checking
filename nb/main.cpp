@@ -1,15 +1,23 @@
-//
-//  main.cpp
-//  nb
-//
-//  Created by ashish aggarwal on 23/07/17.
-//  Copyright © 2017 ashish aggarwal. All rights reserved.
-//
+#include <iostream> // required to perform C++ stream I/O
 
-#include <iostream>
+using namespace std; // for accessing C++ Standard Library members
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
-}
+// function main begins program execution
+
+int main () {
+    
+    int num ;
+    int rem ;
+    
+    cout << " Input a five-digit number : ";
+    cin >> num;;
+    
+    for (int i = 0; i < 5; i++) {
+        rem = num %10;
+        num = num / 10;
+        cout << rem << endl;
+    }
+    
+    return 0; // indicate that program ended successfully
+    
+} // end function main
